@@ -1,11 +1,11 @@
-# README for the Seductions of Scala Tutorial
+# The Seductions of Scala Tutorial
 
 **Dean Wampler, Concurrent Thought**<br/>
 [dean@concurrentthought.com](mailto:dean@concurrentthought.com?subject=Question%20about%20your%20Scalding%20Workshop)<br/>
 [@deanwampler](https://twitter.com/deanwampler)<br/>
 [Hire Me!](mailto:dean@concurrentthought.com?subject=Hiring%20Dean%20Wampler)
 
-*Copyright (c) 2009-2013, Dean Wampler. All Rights Reserved*
+*Copyright (c) 2009-2013, Dean Wampler under the Apache License; see the attached LICENSE file.*
 
 ## Introduction
 
