@@ -12,7 +12,27 @@ This hands-on tutorial introduces you to the Scala programming language, a moder
 
 ## Setup
 
-PDFs of the tutorial slides and all the exercise source code will be provided in class. You need to setup the following tools in advance, if you can.
+PDFs of the tutorial slides and all the exercise source code will be provided in class. You should also clone this GitHub repo in advance.
+
+Either way, you'll need to setup the following tools in advance.
+
+**Please do the following installation steps *before* the tutorial!**
+
+### Git
+
+You'll need [git](http://git-scm.com) if you want to clone the tutorial repository. See [Getting Started Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git) for details.
+
+### This Tutorial
+
+Once git is installed, [clone this tutorial from GitHub](https://github.com/deanwampler/SeductionsOfScalaTutorial). Use your favorite Git GUI or the command line. Using `bash`:
+
+    cd $HOME/fun
+    git clone git://github.com/deanwampler/SeductionsOfScalaTutorial.git
+
+On Windows:
+
+    cd C:\fun
+    git clone git://github.com/deanwampler/SeductionsOfScalaTutorial.git
 
 ### Scala 2.10
 
@@ -25,6 +45,10 @@ Go to to the Scala [download page](http://www.scala-lang.org/downloads) and down
 | Be sure to grab the installer for version 2.10 of Scala. However, most of the tutorial will apply to the current production release, 2.9.X. |
 
 Install Scala somewhere convenient. We'll use `$SCALA_HOME` to refer to this location. Be sure to add `$SCALA_HOME/bin` to your `PATH`.
+
+### SBT 
+
+We will use the *de-facto* build tool for Scala, `sbt`, for some exercises and examples. See the [sbt website](http://www.scala-sbt.org/) for installation instructions. Actually, what you install is a driver Java programm. The actual version of sbt used will be bootstrapped for the project...
 
 ### A Programmer's Editor or IDE
 
