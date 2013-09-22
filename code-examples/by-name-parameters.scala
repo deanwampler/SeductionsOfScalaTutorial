@@ -3,6 +3,14 @@
 
 def infinite: Boolean = infinite
 
+// Note the difference between a value and a function/method definition.
+// WARNING: YOU'LL HAVE TO ^C TO KILL THE SECOND LINE!
+
+def inf1 = infinite
+
+val inf2 = infinite
+
+
 // Now, let's implement a loop construct:
 
 def loop(condition: => Boolean)(block: => Unit): Unit = 

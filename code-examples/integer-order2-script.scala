@@ -5,4 +5,4 @@ list.map(_.toInt)
     .toSet
     .toList
     .sortWith(_ < _)
-    .foreach(println(_))
+    .foreach(println)
