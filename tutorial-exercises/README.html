@@ -169,7 +169,7 @@ pre .tex .formula {
       <h1 id="readmeforthetutorialexercises">README for the Tutorial Exercises</h1>
 
 <p>Dean Wampler<br/>
-<a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x64;&#101;&#x61;&#x6e;&#x40;&#x70;&#x6f;&#108;&#121;&#103;&#x6c;&#111;&#x74;&#x70;&#x72;&#x6f;&#103;&#114;&#97;&#x6d;&#x6d;&#105;&#110;&#x67;&#x2e;&#x63;&#111;&#x6d;">&#x64;&#x65;&#x61;&#110;&#64;&#x70;&#111;&#x6c;&#x79;&#103;&#108;&#111;&#116;&#x70;&#114;&#111;&#x67;&#114;&#97;&#x6d;&#109;&#105;&#110;&#103;&#x2e;&#x63;&#x6f;&#109;</a><br/>
+<a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#x64;&#101;&#x61;&#110;&#64;&#112;&#x6f;&#x6c;&#121;&#x67;&#108;&#x6f;&#x74;&#112;&#114;&#111;&#103;&#114;&#x61;&#109;&#x6d;&#105;&#x6e;&#103;&#x2e;&#99;&#111;&#109;">&#100;&#101;&#97;&#x6e;&#64;&#x70;&#111;&#x6c;&#x79;&#103;&#x6c;&#111;&#116;&#x70;&#114;&#111;&#x67;&#x72;&#x61;&#x6d;&#109;&#x69;&#x6e;&#x67;&#x2e;&#99;&#111;&#109;</a><br/>
 <a href="https://twitter.com/deanwampler">@deanwampler</a><br/>
 April 26, 2013</p>
 
@@ -182,17 +182,24 @@ April 26, 2013</p>
 
 <p>Of course, other solutions are often possible.</p>
 
-<p>To run an exercise, e.g., the first one,</p>
+<p>To run an exercise, e.g., the first one, use the following <code>bash</code> command, where <code>$PWD</code> prints the current working directory.</p>
 
-<pre><code>scala -cp . ex1-classes.scala
+<pre><code>scala -cp $PWD ex1-classes.scala
 </code></pre>
+
+<p>On Windows, use this variant.</p>
+
+<pre><code>scala -cp %cd% ex1-classes.scala
+</code></pre>
+
+<p>(Note that using <code>.</code> instead to represent the current directory doesn&#8217;t appear to work reliably, unfortunately. However, you might try and see&#8230;)</p>
 
 <p>If you get an error that <code>CheapTests</code> can&#8217;t be found, then compile the &#8220;cheap tests&#8221; library:</p>
 
-<pre><code>scalac -cp . cheap-tests.scala
+<pre><code>scalac -cp $PWD cheap-tests.scala
 </code></pre>
 
-<p>If you are on a *nix system with <code>make</code> and <code>bash</code>, you can build this code and test it by invoking <code>make</code> with no arguments.</p>
+<p>If you are on a *nix system with <code>make</code> and <code>bash</code>, you can use <code>make</code> to build (and test) this code, instead. Invoke <code>make</code> with no arguments.</p>
 
 <p>I welcome feedback on the tutorial and on these exercises!</p>
 

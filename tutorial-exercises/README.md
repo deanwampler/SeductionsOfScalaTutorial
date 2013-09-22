@@ -12,15 +12,21 @@ Here are the exercises for the tutorial. We may not have time for all of them. T
 
 Of course, other solutions are often possible.
 
-To run an exercise, e.g., the first one,
+To run an exercise, e.g., the first one, use the following `bash` command, where `$PWD` prints the current working directory.
 
-    scala -cp . ex1-classes.scala
+    scala -cp $PWD ex1-classes.scala
+
+On Windows, use this variant.
+
+    scala -cp %cd% ex1-classes.scala
+
+(Note that using `.` instead to represent the current directory doesn't appear to work reliably, unfortunately. However, you might try and see...)
 
 If you get an error that `CheapTests` can't be found, then compile the "cheap tests" library:
 
-    scalac -cp . cheap-tests.scala
+    scalac -cp $PWD cheap-tests.scala
 
-If you are on a *nix system with `make` and `bash`, you can build this code and test it by invoking `make` with no arguments.
+If you are on a *nix system with `make` and `bash`, you can use `make` to build (and test) this code, instead. Invoke `make` with no arguments.
 
 I welcome feedback on the tutorial and on these exercises!
 
