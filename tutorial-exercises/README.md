@@ -20,6 +20,8 @@ If you get an error that `CheapTests` can't be found, then compile the "cheap te
 
     scalac -cp . cheap-tests.scala
 
+If you are on a *nix system with `make` and `bash`, you can build this code and test it by invoking `make` with no arguments.
+
 I welcome feedback on the tutorial and on these exercises!
 
 # Actors and Scalding Exercises
