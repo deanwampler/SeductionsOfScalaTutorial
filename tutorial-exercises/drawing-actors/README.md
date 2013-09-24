@@ -21,13 +21,11 @@ Using a `bash` shell or Windows command window, run `sbt`, as instructed by the 
 
 At the `sbt` prompt (`>`), run the following commands. (The #... are comments and shouldn't be typed).
 
-    update   # Pull down the other dependencies
-    compile  # Compile the code.
-    test     # Run the simple ScalaTest unit tests. (Also runs compile)
-    run      # Run the actor example.
-    quit     # Exit sbt.
+    test   # Pull down external dependencies, compile, and test
+    run    # Run the actor example.
+    quit   # Exit sbt.
 
-The first time start `sbt` and run `update1`, it may take a while to download the dependencies (including the rest of the `sbt` code itself!). 
+It may take a while to download the dependencies (including the actual `sbt` code itself), the first time you run `sbt test`. This is a one time "hit".
 
 The fairly verbose output of the commands should end with the following for a successful run:
 
