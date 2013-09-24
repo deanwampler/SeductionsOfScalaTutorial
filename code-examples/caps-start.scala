@@ -5,6 +5,6 @@ object CapsStart {
   }
 }
 // $ scalac caps-start.scala
-// $ scala -cp . CapsStart aB Ab AB ab
+// $ scala -cp $PWD CapsStart aB Ab AB ab
 // arg: Ab
 // arg: AB

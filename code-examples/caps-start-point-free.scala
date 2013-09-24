@@ -6,6 +6,6 @@ object CapsStartPointFree {
   }
 }
 // $ scalac caps-start-point-free.scala
-// $ scala -cp . CapsStartPointFree aB Ab AB ab
+// $ scala -cp $PWD CapsStartPointFree aB Ab AB ab
 // arg: Ab
 // arg: AB

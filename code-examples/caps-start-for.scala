@@ -7,6 +7,6 @@ object CapsStartFor {
   }
 }
 // $ scalac caps-start-for.scala
-// $ scala -cp . CapsStartFor aB Ab AB ab
+// $ scala -cp $PWD CapsStartFor aB Ab AB ab
 // arg: Ab
 // arg: AB

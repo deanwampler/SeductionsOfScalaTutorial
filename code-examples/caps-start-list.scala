@@ -11,5 +11,5 @@ object CapsStartList {
   }
 }
 // $ scalac caps-start-list.scala
-// $ scala -cp . CapsStartList aB Ab AB ab
+// $ scala -cp $PWD CapsStartList aB Ab AB ab
 // list: RangeMFM(Ab, AB)
