@@ -36,7 +36,28 @@ In the `tutorial-exercises` directory, do `ex6-for-comprehensions.scala`. Note t
 
 | File | Purpose
 | :--- | :---
-| `ex6-for-comprehensions.scala` | Practice writing for comprehensions
+| `ex6-for-comprehensions.scala` | Practice writing for comprehensions.
+
+You will need to compile my simple test support code `tutorial-exercises/cheap-tests.scala`:
+
+    cd tutorial-exercises
+    scalac cheap-tests.scala
+
+Note that you'll have several `*.class` files in the same directory. Each anonymous function is compiled into a separate class file with a synthesized name. There are other files for the declared classes and (singleton) object.
+
+Then you can run your exercise solution thusly:
+
+    scala -cp $PWD ex6-for-comprehensions.scala
+
+**NOTE:** I've seen mysterious error for the `import CheapTests._` statement, even though this class is in the path after you compile `cheap-tests.scala`. Try `-cp .` and `-classpath $PWD`, etc. Another hack that appears to work is to load `cheap-tests.scala` as an "initialization script":
+
+    scala -i cheap-tests.scala ex6-for-comprehensions.scala
+
+or if you're copying and pasting into the REPL:
+
+    scala -i cheap-tests.scala
+
+*If you find a cause and solution for this behavior, e.g., a particular combination of Scala, Java, and OS version, please let me know!*
 
 ### Recursion
 

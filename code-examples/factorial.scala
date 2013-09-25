@@ -6,12 +6,14 @@
 // This is a right-recursion implementation of factorial.
 // Note that we aren't checking for negative arguments!
 
+//@scala.annotation.tailrec  // NOT tail recursive!
 def factr(i: Int): Long = 
   if (i == 1) 1L 
   else i*factr(i-1)
 
 // This is a left-recursion implementation.
 
+@scala.annotation.tailrec
 def factl(i: Int): Long = {
   def f(accumulator: Long, i: Int): Long = 
     if (i == 1) accumulator

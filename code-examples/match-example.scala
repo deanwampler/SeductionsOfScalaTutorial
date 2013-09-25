@@ -8,7 +8,7 @@ l foreach { _ match {
   case (3,2,_) => println("(3,2,?)")
   case (a,b,c) => 
     println("("+a+","+b+","+c+")")
-  case Nil => // #5 (nothing)
+  case Nil => println("Nil") // does this print?
 }}
 
 // Becuase we don't actually care about the value passed to the foreach (we use
@@ -20,5 +20,5 @@ l foreach {
   case (3,2,_) => println("(3,2,?)")
   case (a,b,c) => 
     println("("+a+","+b+","+c+")")
-  case Nil => // #5 (nothing)
+  case Nil => println("Nil") // does this print?
 }

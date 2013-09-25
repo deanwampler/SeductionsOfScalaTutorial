@@ -1,6 +1,7 @@
 val list = 
   1 :: 2 :: 3 :: 4 :: 5 :: Nil
 
+@scala.annotation.tailrec
 def prnt(l: List[_]): Unit = l match {
   case head :: tail => 
     print(head + ", ")

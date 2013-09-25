@@ -8,8 +8,8 @@ val r3 = 1 until 10 by 3
 val r4 = 1.0 until 2.0 by 0.1
 
 r1.foreach(println)
-r2 foreach println    // Drop the . and ()
-r3 foreach println    
+r2 foreach(println)   // Drop the .
+r3 foreach println    // Drop the . and ()
 r4 foreach println
 
 // Side note: Why is dropping the . and () useful?

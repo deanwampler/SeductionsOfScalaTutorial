@@ -6,7 +6,7 @@ import scala.math.Pi
 /**
  * These tests don't do anything very exciting, but they illustrate
  * the basics of writing unit tests in Scala with the ScalaTest API.
- * NOte that several DSL styles are available. I'm using a BDD (Behavior
+ * Note that several DSL styles are available. I'm using a BDD (Behavior
  * Driven Development) style here, like RSpec for Ruby...
  * An alternative testing API is the popular Specs2.
  * We don't even test the Actors here. Akka comes with test support tools

@@ -262,10 +262,35 @@ pre .tex .formula {
 <tbody>
 <tr>
 	<td style="text-align:left;"><code>ex6-for-comprehensions.scala</code></td>
-	<td style="text-align:left;">Practice writing for comprehensions</td>
+	<td style="text-align:left;">Practice writing for comprehensions.</td>
 </tr>
 </tbody>
 </table>
+<p>You will need to compile my simple test support code <code>tutorial-exercises/cheap-tests.scala</code>:</p>
+
+<pre><code>cd tutorial-exercises
+scalac cheap-tests.scala
+</code></pre>
+
+<p>Note that you&#8217;ll have several <code>*.class</code> files in the same directory. Each anonymous function is compiled into a separate class file with a synthesized name. There are other files for the declared classes and (singleton) object.</p>
+
+<p>Then you can run your exercise solution thusly:</p>
+
+<pre><code>scala -cp $PWD ex6-for-comprehensions.scala
+</code></pre>
+
+<p><strong>NOTE:</strong> I&#8217;ve seen mysterious error for the <code>import CheapTests._</code> statement, even though this class is in the path after you compile <code>cheap-tests.scala</code>. Try <code>-cp .</code> and <code>-classpath $PWD</code>, etc. Another hack that appears to work is to load <code>cheap-tests.scala</code> as an &#8220;initialization script&#8221;:</p>
+
+<pre><code>scala -i cheap-tests.scala ex6-for-comprehensions.scala
+</code></pre>
+
+<p>or if you&#8217;re copying and pasting into the REPL:</p>
+
+<pre><code>scala -i cheap-tests.scala
+</code></pre>
+
+<p><em>If you find a cause and solution for this behavior, e.g., a particular combination of Scala, Java, and OS version, please let me know!</em></p>
+
 <h3 id="recursion">Recursion</h3>
 
 <table>
