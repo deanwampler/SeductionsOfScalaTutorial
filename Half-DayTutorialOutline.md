@@ -75,7 +75,7 @@ We'll briefly visit traits in the **Components** section below. We won't have ti
 | :--- | :---
 | `traits.scala` | An example of a logging abstraction with an implementation
 | `traits2.scala` | An extension of the previous example demonstrating some of the fine points of mixing traits, especially traits that *aren't* disjoint, but have the same methods that are used to "wrap" methods in classes that mix in the traits.
-| `tutorial-exercises/ex7-traits.scala` | An exercise for traits.
+| `tutorial-exercises/ex7-traits.scala` | An exercise for traits. (Optional - depending on time.)
 
 ## Back to FP
 
@@ -85,7 +85,6 @@ The hallmark of functional languages are powerful collections libraries.
 
 | File | Purpose
 | :--- | :---
-| `fib.scala` | Recursive Fibonacci functions that use pattern matching.
 | `integer-order1-script.scala` | Manipulating a collection of integers. What does it do?
 | `integer-order2-script.scala` | A shorter version of the previous example.
 
