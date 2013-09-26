@@ -17,9 +17,9 @@ The following files are in `code-examples`:
 | File | Purpose
 | :--- | :---
 | `caps-start.scala` | A compilable program that takes a list of words as input and prints only those words where the first letter is capitalized. Uses `filter` and `foreach`.
-| `caps-start-point-free.scala` | Like `caps-start.scala`, but uses the *point-free style*.
 | `caps-start-for.scala` | Uses a *for comprehension*.
 | `caps-start-list.scala` | Converts the input argument array into a list and uses a *for comprehension*.
+| `caps-start-point-free.scala` | (Optional) Like `caps-start.scala`, but uses the *point-free style*.
 
 ### Ranges and Tuples
 
