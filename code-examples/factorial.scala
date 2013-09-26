@@ -13,8 +13,8 @@ def factr(i: Int): Long =
 
 // This is a left-recursion implementation.
 
-@scala.annotation.tailrec
 def factl(i: Int): Long = {
+  @scala.annotation.tailrec
   def f(accumulator: Long, i: Int): Long = 
     if (i == 1) accumulator
     else f(i*accumulator, i-1)

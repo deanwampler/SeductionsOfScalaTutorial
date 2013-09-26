@@ -23,6 +23,8 @@ println(mm1b)
 
 object MiniMap1 {
   def apply[K,V](pairs: Tuple2[K,V]*) = new MiniMap1(pairs: _*)
+  // A common convention in Scala collections for creating an empty:
+  def empty[K,V] = new MiniMap1()
 }
 
 val mm1c = MiniMap1("one" :-> 1, "two" :-> 2)
